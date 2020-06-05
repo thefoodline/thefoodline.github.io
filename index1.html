@@ -1,0 +1,173 @@
+<HTML>
+<HEAD>
+	<TITLE>___</TITLE>
+<STYLE type='text/css'>
+	.center {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		z-index: -1;
+		top: 5%;
+	}
+	#title_block{
+	width: 101%;
+	height: 20%;
+	background: white;
+	top: 0%;
+  left: -1%;
+	z-index: -1;
+    }
+    ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 1;
+  overflow: hidden;
+  background-color: #AD6767;
+  width: 101%;
+  height: 10%;
+  left: -1%;
+  right: -1%;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 15px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #F68F8F;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #FBC7C7;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #FCD5D5;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#center_block{
+  width: 102%;
+  height: 40%;
+  background: white;
+  top: 0%;
+  left: -1%;
+}
+
+#title_box{
+  width: 70%;
+  height: 25%;
+  background: #F8ABAB;
+  top: 20%;
+  left: 15%;
+  position:relative;
+}
+#subtitle_box{
+  width: 50%;
+  height: 20%;
+  background: #FBC7C7;
+  top: 20.31%;
+  left: 15%;
+  position:relative;
+}
+#bigbox{
+  width: 101%;
+  height: 390%;
+  background: #f8dfdb;
+  top: 50%;
+  left: -1%;
+  position: relative;
+  border: solid 2px #FBC7C7
+}
+#textbox{
+  width: 90%;
+  height: 90%;
+  position: relative;
+  background: white;
+  left: 5%;
+  top: 5%;
+  border: solid 2px #FBC7C7
+}
+.horizontal_dotted_line{
+  border-bottom: 5px dotted #C28D8D;
+  width: 100%;
+} 
+
+</STYLE>
+</HEAD>
+<BODY>
+	<DIV id='title_block' style="position: relative; left: 0; top: 0;">
+		<IMG src='images/title.png' alt='title' class='center' style='position: relative; top: 20;'></IMG>
+	</DIV>
+	<ul>
+  <li><a href="#home"><SPAN style="color: white; font-family: 'Avocado Creamy'; font-size: 40px">Home</SPAN></a></li>
+  
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn"><SPAN style="color: white; font-family: 'Avocado Creamy'; font-size: 40px">Recipe</SPAN></a>
+    <div class="dropdown-content">
+  <a href="#"><SPAN style="color: white; font-family: 'Avocado Creamy'; font-size: 25px">Link 1</SPAN></a>
+  <a href="#"><SPAN style="color: white; font-family: 'Avocado Creamy'; font-size: 25px">Link 2</SPAN></a>
+  <a href="#"><SPAN style="color: white; font-family: 'Avocado Creamy'; font-size: 25px">Link 3</SPAN></a>
+  <li><a href="#news"><SPAN style="color: white; font-family: 'Avocado Creamy'; font-size: 40px">About Us</SPAN></a></li>
+  </div>
+  </li>
+</ul>
+<DIV id='center_block'>
+  <DIV id='title_box'><SPAN style=" color:white; font-family:'Avocado Creamy'; font-size: 68px; padding-left: 10px; padding-top: 2px">(Title)</SPAN></DIV>
+  <DIV id='subtitle_box'><SPAN style=" color:white; font-family:'Avocado Creamy'; font-size: 53px; padding-left: 10px; padding-top: 2px">(Subtitle)</SPAN></DIV>
+<DIV id='bigbox'>
+  <DIV id='textbox'><SPAN style="color: #C28D8D; font-family:'Avocado Creamy'; font-size: 72px; padding-left: 10px">Summary</SPAN>
+    
+<DIV id=imgbox></DIV>
+  <IMG src='images/fries.png' name=bigpic id='img1'></IMG>
+        <TABLE>
+    <TR>
+      <TD align=center><IMG src='images/active.png' width=15px name='button1' onclick="src='images/active.png'; button2.src='images/inactive.png'; button3.src='images/inactive.png'; button4.src='images/inactive.png'; button5.src='images/inactive.png'; bigpic.src='images/fries.png';"></IMG></TD>
+      <TD align=center><IMG src='images/inactive.png' width=15px name='button2' onclick="src='images/active.png'; button1.src='images/inactive.png'; button3.src='images/inactive.png'; button4.src='images/inactive.png'; button5.src='images/inactive.png'; bigpic.src='images/cookfries.png';"></IMG></TD>
+      <TD align=center><IMG src='images/inactive.png' width=15px name='button3' onclick="src='images/active.png'; button1.src='images/inactive.png'; button2.src='images/inactive.png'; button4.src='images/inactive.png'; button5.src='images/inactive.png'; bigpic.src='images/ryujin.jpg';"></IMG></TD>
+      <TD align=center><IMG src='images/inactive.png' width=15px name='button4' onclick="src='images/active.png'; button1.src='images/inactive.png'; button2.src='images/inactive.png'; button3.src='images/inactive.png'; button5.src='images/inactive.png'; bigpic.src='images/chaeryeong.jpg';"></IMG></TD>
+      <TD align=center><IMG src='images/inactive.png' width=15px name='button5' onclick="src='images/active.png'; button1.src='images/inactive.png'; button2.src='images/inactive.png'; button3.src='images/inactive.png'; button4.src='images/inactive.png'; bigpic.src='images/yuna.jpg';"></IMG></TD>
+    </TR>
+  </TABLE>
+</DIV>
+    <BR></BR>
+    <SPAN style="color: #D1AAAA; font-family:'Avocado Creamy'; font-size: 32px; padding-left: 10px">(Fill something in)</SPAN>
+    <BR><BR></BR><BR><BR></BR><BR></BR><BR></BR><BR></BR></BR></BR>
+  <div class="horizontal_dotted_line"></div>
+  <SPAN style="color: #C28D8D; font-family:'Avocado Creamy'; font-size: 72px; padding-left: 10px">Recipe</SPAN>
+  <BR></BR>
+<SPAN style="color: #CA9B9B; font-family:'Avocado Creamy'; font-size: 40px; padding-left: 10px">Ingredients</SPAN>
+<BR></BR>
+<SPAN style="color: #D1AAAA; font-family:'Avocado Creamy'; font-size: 32px; padding-left: 10px">(Fill something in)</SPAN><BR></BR>
+  <SPAN style="color: #CA9B9B; font-family:'Avocado Creamy'; font-size: 40px; padding-left: 10px">How to do?</SPAN><BR></BR>
+  <SPAN style="color: #D1AAAA; font-family:'Avocado Creamy'; font-size: 32px; padding-left: 10px">(Fill something in)</SPAN>
+  </DIV>
+</DIV>
+</DIV>
+</BODY>
+</HTML>
