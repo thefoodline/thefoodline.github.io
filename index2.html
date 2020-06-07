@@ -142,8 +142,10 @@ ol.new_style{
  padding: 60px; 
 }
 #orderlist{
-  width: 90%;
+  width: 60%;
   height: 40%;
+  background-color: red;
+  position: relative;
 }
 #inbox{
   width: 60%;
@@ -157,7 +159,65 @@ tr.table{
   height: 2%;
   background-color: white;
   position: relative;
-
+}
+ul.n-style {
+  background: white;
+  padding: 70px;
+  list-style-type: circle;
+  margin: 0;
+  padding: 1;
+  overflow: hidden;
+  width: 90%;
+  height: 5%;
+}
+#footerbar{
+  width: 102%;
+  height: 40%;
+  background-color: #F68F8F;
+  position: relative;
+  top: 220%;
+  left: -1%;
+  border: solid 10px white;
+}
+#footerbar_blank{
+  width: 93%;
+  height: 90%;
+  background-color: white;
+  position: relative;
+  left: 3%;
+  top: 5%;
+  border: solid 1px #AD6767;
+  text-align: center;
+}
+#tbox{
+  width: 30%;
+  height: 60%;
+  background-color: white;
+  position: relative;
+  left: 1%;
+  top: 5%;
+  border: solid 2px #AD6767;
+  text-align: center;
+}
+#tbox2{
+  width: 30%;
+  height: 60%;
+  background-color: white;
+  position: relative;
+  left: 34%;
+  top: -56%;
+  border: solid 2px #AD6767;
+  text-align: center;
+}
+#tbox3{
+  width: 30%;
+  height: 60%;
+  background-color: white;
+  position: relative;
+  left: 68%;
+  top: -117%;
+  border: solid 2px #AD6767;
+  text-align: center;
 }
 </STYLE>
 </HEAD>
@@ -184,9 +244,9 @@ tr.table{
 <DIV id='bigbox'>
   <DIV id='textbox'><SPAN style="color: #C28D8D; font-family:'Avocado Creamy'; font-size: 72px; padding-left: 10px">Summary</SPAN>
 
-  <IMG src='fries.png' name=bigpic id='img1' style="padding-left: 830px"></IMG>
+  <IMG src='fries.png' name=bigpic id='img1' style="padding-left: 830px; padding-top: -40px"></IMG>
         <TABLE id='TABLE' style="padding-left: 950px">
-          <DIV id='inbox'><SPAN style="color: #D1AAAA; font-family:'Avocado Creamy'; font-size: 32px; padding-left: 10px">This is a dish that helps people to make fries in airfryer. <BR></BR> <SPAN style="padding-left: 10px"> If you are allergic to potatoes, please do not try this dish. </SPAN></SPAN></DIV>
+          <DIV id='inbox'><SPAN style="color: #D1AAAA; font-family:'Avocado Creamy'; font-size: 32px; padding-left: 10px">This is a dish that helps people to make fries in airfryer. <BR></BR> <SPAN style="padding-left: 10px"> If you are allergic to potatoes, please do not try this dish. <BR> <BR></BR></BR><SPAN style="padding-left: 10px"> Maximum Cooking Time: 1 hour <BR></BR><SPAN style="padding-left: 20px"> Cooking Process: Trime the Potatoes → Wash the Potatoes → <BR></BR><SPAN style="padding-left: 20px">Cook the potatoes  → Fry the Potatoes</SPAN></SPAN></SPAN></SPAN></SPAN></DIV>
     <TR class='table'>
       <TD align=center><IMG src='active.png' width=15px name='button1' onclick="src='active.png'; button2.src='inactive.png'; button3.src='inactive.png'; button4.src='inactive.png'; button5.src='inactive.png'; bigpic.src='fries.png';"></IMG></TD>
       <TD align=center><IMG src='inactive.png' width=15px name='button2' onclick="src='active.png'; button1.src='inactive.png'; button3.src='inactive.png'; button4.src='inactive.png'; button5.src='inactive.png'; bigpic.src='cookfries.png';"></IMG></TD>
@@ -201,24 +261,44 @@ tr.table{
   <BR></BR>
 <SPAN style="color: #CA9B9B; font-family:'Avocado Creamy'; font-size: 40px; padding-left: 10px">Ingredients</SPAN>
 <SPAN style="color: #D1AAAA; font-family:'Avocado Creamy'; font-size: 32px; padding-left: 10px">  
- <ul class='new-style' style="margin-top:30px; margin-bottom:-250px; margin-left: 60px">
+ <ul class='new-style' style="margin-top:40px; margin-bottom:-240px; margin-left: 60px">
   <li>Potato</li>
 </ul>
   <SPAN style="color: #CA9B9B; font-family:'Avocado Creamy'; font-size: 40px; padding-left: 10px; padding-top: 40px">How to do?</SPAN><BR></BR>
   <SPAN style="color: #D1AAAA; font-family:'Avocado Creamy'; font-size: 32px; padding-left: 10px">
-<OL class='new_style'style="margin-top:-110px;">
-  <LI>Peel the skin of the Potatoes</LI>
-  <LI>Peel the skin of the Potatoes</LI>
-  <LI>Peel the skin of the Potatoes</LI>
-  <LI>Peel the skin of the Potatoes</LI>
-  <LI>Peel the skin of the Potatoes</LI>
-  <LI>Peel the skin of the Potatoes</LI>
-  <LI>Peel the skin of the Potatoes</LI>
-  <LI>Peel the skin of the Potatoes</LI>
-</OL>
+    <BR></BR>
+<DIV id='orderlist'>
+  <OL class='new_style'style="margin-top:-110px;">
+    <LI>Peel the skin of the Potatoes <SPAN style="color: #D1AAAA; font-family:'Avocado Creamy'; font-size: 24px;">(Depends on the amount of your potatoes)</SPAN></LI>
+    <LI>Cut the potatoes all into a similar size <SPAN style="color: #D1AAAA; font-family:'Avocado Creamy'; font-size: 24px;">(Depends on the amount of your potatoes)</SPAN></LI>
+    <LI>Soak the trimmed potatoes in to a bowl of water <SPAN style="color: #D1AAAA; font-family:'Avocado Creamy'; font-size: 24px;">(Depends on the amount of your potatoes)</SPAN></LI>
+      <UL class='n-style'>
+          <DT>- To wash off the Starch</DT>
+      </UL>
+    <LI>Peel the skin of the Potatoes</LI>
+    <LI>Peel the skin of the Potatoes</LI>
+    <LI>Peel the skin of the Potatoes</LI>
+    <LI>Peel the skin of the Potatoes</LI>
+    <LI>Peel the skin of the Potatoes</LI>
+  </OL>
   </SPAN>
+</DIV>
  </DIV>
 </DIV>
+</DIV>
+<DIV id='footerbar'>
+  <DIV id='footerbar_blank'>
+      <SPAN style="color: #CA9B9B; font-family:'Avocado Creamy'; font-size: 40px; padding-left: 10px; padding-top: 40px">the foodline</SPAN>
+      <DIV id='tbox'>
+       <SPAN style="color: #CA9B9B; font-family:'Avocado Creamy'; font-size: 24px; padding-left: 10px; padding-top: 40px"><BR>Try to change people's life by diet instead of eating fast food everyday.<BR><BR><SPAN style="color: #CA9B9B; font-family:'Avocado Creamy'; font-size: 40px; padding-left: 10px; padding-top: 40px">•Healthy•</SPAN></BR></BR></SPAN>
+      </DIV>
+      <DIV id='tbox2'>
+       <SPAN style="color: #CA9B9B; font-family:'Avocado Creamy'; font-size: 24px; padding-left: 10px; padding-top: 40px"><BR>Eat and cook your own food with your very own favorite flavor.<BR><BR><SPAN style="color: #CA9B9B; font-family:'Avocado Creamy'; font-size: 40px; padding-left: 10px; padding-top: 40px">•Delicious•</SPAN></BR></BR></SPAN>
+      </DIV>
+      <DIV id='tbox3'>
+       <SPAN style="color: #CA9B9B; font-family:'Avocado Creamy'; font-size: 24px; padding-left: 10px; padding-top: 40px"><BR>Make easy and delicious dish everyday by yourself.<BR><BR><SPAN style="color: #CA9B9B; font-family:'Avocado Creamy'; font-size: 40px; padding-left: 10px; padding-top: 40px">•Everyday•</SPAN></BR></BR></SPAN>
+      </DIV>
+  </DIV>
 </DIV>
 </BODY>
 </HTML>
